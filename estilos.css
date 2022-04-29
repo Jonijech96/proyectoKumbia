@@ -4,11 +4,16 @@ body {
 }
 a{
     text-decoration: none;
+    color: white;
+    font-family: 'Kanit', sans-serif;
 }
 
 header{
     border-bottom: 1px solid rgba(255,255, 255, 0.25);
     box-shadow: 0 0 8px black;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
     /* background: linear-gradient(rgba(0,7,12,0.75),rgba(0,7,12,0.75)); */
 }
 header .container-header{
@@ -28,8 +33,9 @@ header .container-header ul{
     
 }
 header .container-header ul a{
-    color: white;
-    font-family: 'Roboto', sans-serif;
+    
+  
+    transition: all 300ms;
     
 }
 header .container-header ul a:hover{
@@ -76,6 +82,46 @@ header .container-header ul a:hover{
 }
 .texto-principal h2{
     font-size: 4rem;
+}
+
+.barra-horizontal{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    width: 4%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.texto-horizontal{
+    
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: -20px;
+    
+    
+    font-size: 14px;
+    padding-top: 30px;
+}
+.texto-horizontal a{
+    transition: all 100ms;
+}
+.texto-horizontal a:hover{
+    opacity: 0.5;
+}
+.texto-horizontal hr{
+    width: 80px;
+    transform: rotate(90deg);
+    margin: 50px;
 }
 
 footer{
