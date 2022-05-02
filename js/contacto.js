@@ -6,6 +6,8 @@ window.addEventListener("load", function () {
 
 // para cerrar con el boton
 document.querySelector("#close"),
-  addEventListener("click", function () {
-    document.querySelector(".popup").style.display = "none";
+  addEventListener("click", function (e) {
+    if (e.target.tagName === "BUTTON") {
+      document.querySelector(".popup").style.display = "none";
+    }
   });
