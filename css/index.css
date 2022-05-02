@@ -1,6 +1,10 @@
 body {
     margin: 0;
-    height: 120vh;
+    
+}
+ul{
+    list-style: none;
+    padding: 0;
 }
 a{
     text-decoration: none;
@@ -70,10 +74,10 @@ header .container-header ul a:hover{
 }
 
 .texto-principal{
-    padding-top: 110px;
+    padding-top: 12vh;
     font-family: 'Dancing Script', cursive;
     color: white;
-    height: 80vh;
+    height: 88vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,7 +188,34 @@ header .container-header ul a:hover{
 
 
 footer{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     color: white;
     border-top: 1px solid rgba(255,255, 255, 0.25);
     text-align: center;
+    height: 300px;
+    background-color: #010506;
+}
+footer hr{
+    
+    margin: 1px;
+    
+}
+.icons-footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.icons-footer  svg{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 14px;
+    transition: all 100ms;
+}
+.icons-footer a svg:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
 }

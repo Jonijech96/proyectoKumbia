@@ -89,13 +89,23 @@ header .container-header ul a:hover{
     display: flex;
     max-width: 1320px;
     margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
     }
 
-.contenedor-quienes-somos .quienes-somos-texto,
+/* .contenedor-quienes-somos .quienes-somos-texto,
 .contenedor-quienes-somos .quienes-somos-imagen{
     width: 50%;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+} */
+
+.contenedor-quienes-somos .quienes-somos-texto{
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
