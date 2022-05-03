@@ -6,48 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="/css/contacto.css">
+        <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Roboto&family=Kanit:wght@500&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    <section id="contacto">
+    <header id="header">
+        <div class="container-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="imag/logo.png" width="110px" alt="">
+                </a>
+            </div>
+
+            <nav>
+                <ul class="menulist">
+                    <li><a href="quienesSomos.html">Quienes Somos</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="discografia.html">Discografia</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="fondo-portada">
         <h1>Contacto</h1>
-        <form action="">
-        
-            <fieldset>
-                <legend>Informacion Personal</legend>
-                
-            
-            <br>
-            <label for="nombre_apellido">Nombre: </label>
-            
-            <input type="text" name="nombre_apellido">
-            <br>
-            <br>
-            <label for="nombre_apellido">Apellido: </label>
-            <input type="text" name="nombre_apellido">
-            <br>
-            <br>
-            <label for="correo">Correo: </label>
-            <input type="text" name="correo">
-            <br>
-            <br>
-            
-            <select name="talles" id="">
-                
-                <option value="L">Soltero/a</option>
-                <option value="M">Casado/a</option>
-                <option value="S">Divorciado/a</option>
-            </select>
-            <br>
-            <br>
-            <label for="acepta">Queres recibir nuestro NewsLetter?</label>
-            <input type="checkbox" name="acepta" value="1"></input>
-            <br>
-            <textarea name="comentarios" id="" cols="30" rows="10" placeholder="comentarios"></textarea>
-            <br>
-            <input type="reset" value="limpiar-formulario">
-            <button>Enviar</button>
-            </fieldset>
-        </form>
+        <!-- <img src="imag/foto-grupo1.jpg" width="100%" alt=""> -->
+    </div>
+    <section id="contacto">
+        <div class="container">
+            <form action="" method="POST" class="form">
+				<h2 class="title">Hablemos</h2>
+				<p>Si está interesado en trabajar conmigo en su próximo proyecto, 
+					no dude en ponerse en contacto conmigo.</p>
+				<label for="form-name">
+					Nombre Completo
+					<input required name="name" id="form-name" type="text" placeholder="Juan">
+				</label>
+				<label for="form-name">
+					Correo Electronico
+					<input required name="name" id="form-name" type="email" placeholder="Juan@mimail.com">
+				</label>
+				<label for="form-name">
+					Cuentame
+					<textarea required placeholder="Mensaje" name="message" id="form-message" cols="30" rows="7"></textarea>
+				</label>
+				<button class="button" type="submit">Enviar Mensaje</button>
+			</form>
+        </div>
     </section>
 
     <div class="popup">
