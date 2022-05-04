@@ -24,8 +24,19 @@ header{
     position: fixed;
     width: 100%;
     z-index: 5;
+    transition: 700ms;
     /* background: linear-gradient(rgba(0,7,12,0.75),rgba(0,7,12,0.75)); */
 }
+header img{
+    transition: 700ms;
+}
+header.abajo {
+    background-color: rgba(0, 7, 12, 0.801);
+}
+header.abajo img{
+    width: 100px;
+}
+
 header .container-header{
     display: flex;
     width: 75%;
@@ -91,6 +102,7 @@ header .container-header ul a:hover{
 }
 
 .contenedor-quienes-somos{
+    width: 90%;
     height: 600px;
     display: flex;
     max-width: 1320px;
