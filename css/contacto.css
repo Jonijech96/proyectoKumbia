@@ -1,3 +1,7 @@
+@import "./header.css";
+@import "./fondoPortada.css";
+
+
 *{
     margin: 0;
     padding: 0;
@@ -16,18 +20,19 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 h1{
+    margin: 0.67em 0;
     font-family: 'Kanit',sans-serif;
 }
 li{
     list-style: none;
 }
-header{
+/* header{
     border-bottom: 1px solid rgba(255,255, 255, 0.25);
     box-shadow: 0 0 8px black;
     position: fixed;
     width: 100%;
     z-index: 5;
-    /* background: linear-gradient(rgba(0,7,12,0.75),rgba(0,7,12,0.75)); */
+    
 }
 header .container-header{
     display: flex;
@@ -54,9 +59,9 @@ header .container-header ul a{
 header .container-header ul a:hover{
     color: #E35F21 ;
     text-decoration: underline;
-}
+} */
 
-.fondo-portada {
+/* .fondo-portada {
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -75,7 +80,7 @@ header .container-header ul a:hover{
         position: relative;
         color: #FAAB05;
 
-}
+} */
 
 
 

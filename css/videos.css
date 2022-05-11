@@ -28,7 +28,6 @@ li{
     width: 100%;
     z-index: 5;
     transition: 700ms;
-
 }
 header img{
     transition: 700ms;
@@ -88,79 +87,16 @@ header .container-header ul a:hover{
 
 } */
 
-/* .fondo-portada::after{
-    content: "";
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-} */
-
-#quienes-somos{
-    padding-top: 100px;
-    padding-bottom: 100px;
-
+.container-videos iframe{
+    border-radius: 10px;
+    background-color: aliceblue;
 }
 
-.contenedor-quienes-somos{
-    width: 90%;
-    height: 600px;
-    display: flex;
-    max-width: 1320px;
-    margin: auto;
-    justify-content: space-around;
-    align-items: center;
-    gap: 30px;
-    }
-
-/* .contenedor-quienes-somos .quienes-somos-texto,
-.contenedor-quienes-somos .quienes-somos-imagen{
-    width: 50%;
+.video-grid{
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,390px);
+    gap: 40px;
+    padding: 40px;
     justify-content: center;
-    align-items: center;
-} */
-
-.contenedor-quienes-somos .quienes-somos-texto{
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-/*Seccion  Footer */
-footer{
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: white;
-    border-top: 1px solid rgba(255,255, 255, 0.25);
-    text-align: center;
-    height: 300px;
-    background-color: #010506;
-}
-footer hr{
-    
-    margin: 1px;
-    
-}
-.icons-footer ul{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-.icons-footer  svg{
-    height: 30px;
-    width: 30px;
-    background-color: white;
-    border-radius: 14px;
-    transition: all 100ms;
-}
-.icons-footer a svg:hover{
-    opacity: 0.5;
-    transform: scale(1.1);
 }
