@@ -1,0 +1,13 @@
+
+svg.icons-music{
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 14px;
+    transition: all 100ms;
+}
+
+svg.icons-music:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+}
