@@ -43,9 +43,8 @@ li{
     z-index: 10;
 }
 .popup-formulario{
-    background-color: aqua;
-    width: 450px;
-    padding: 30px 40px;
+    background-color: rgb(255, 115, 0);
+    width: calc(100% - 64px);
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -54,6 +53,22 @@ li{
     font-family: 'kanit',sans-serif;
     text-align: center;
     transition: all 600ms;
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+    max-height: 680px;
+    max-width: 824px;
+    box-shadow: 0px 11px 15px -7px rgb(0 0 0 / 20%), 0px 24px 38px 3px rgb(0 0 0 / 14%), 0px 9px 46px 8px rgb(0 0 0 / 12%);
+
+}
+.popup-formulario .popup-texto-formulario{
+    margin-right: 40px;
+}
+.popup-formulario .imagen{}
+.popup-formulario img{
+    
+    height: 100%;
+    object-fit: cover;
 }
 /* .popup::after{
     content: "";
@@ -66,7 +81,7 @@ li{
     z-index: -1;
 } */
 
-.popup button{
+#close{
     display: block;
     margin: 0 0 20px auto;
     background-color: transparent;
@@ -93,6 +108,8 @@ li{
     text-decoration: none;
     padding: 5px 0;
 }
+.popup .popup-texto{
+}
 
 #contacto .container{
     font-family: 'Kanit', sans-serif;
@@ -101,7 +118,7 @@ li{
     padding: 100px 12px;
    
 }
-#contacto .form{
+.form{
     max-width: 540px;
     display: flex;
     flex-direction: column;
@@ -128,7 +145,27 @@ li{
 
 }
 .form .button{
+    color: white;
+    background-color: #1a1a1a;
     font-size: 1.5rem;
     padding: 10px 20px;
     font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.popup .form{
+    padding-right: 40px;
+}
+
+.no-gracias {
+    cursor: pointer;
+    font-weight: bold;
+    color: #1a1a1a;
+    border: none;
+    background-color: transparent;
+}
+.no-gracias:hover{
+    text-decoration: underline;
 }

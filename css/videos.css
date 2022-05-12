@@ -30,6 +30,7 @@ li{
 .container-videos iframe{
     border-radius: 10px;
     background-color: aliceblue;
+    transition: all 600ms ;
 }
 
 .video-grid{
@@ -39,4 +40,9 @@ li{
     gap: 40px;
     padding: 40px;
     justify-content: center;
+}
+
+.container-videos iframe:hover{
+    box-shadow: 1px 1px 20px -5px;
+    transform: scale(1.1);
 }
