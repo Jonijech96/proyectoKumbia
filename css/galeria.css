@@ -1,9 +1,31 @@
-body{
-    background-color: #333;
-    margin: 1em;
+@import "./header.css";
+@import "./fondoPortada.css";
+@import "./footer.css";
+
+body {
+    margin: 0;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+}    
+ul{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #FAAB05   ;
+    font-family: 'Kanit', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-family: 'Kanit',sans-serif;
+}
+li{
+    list-style: none;
 }
 
-img{
+.galeria img{
     max-width: 100%;
     margin-bottom: 0.5em;
     outline: 2px solid #fff;
@@ -12,8 +34,10 @@ img{
 }
 
 .galeria{
+    margin: 100px 1em;
 columns: 5 320px;
 column-gap: 0.5em;
+
 }
 
 .light-box{
@@ -29,6 +53,7 @@ column-gap: 0.5em;
     transform: scale(0);
     transition: transform .3s ease-in-out;
     gap: 10px;
+    z-index: 10;
 }
 
 .light-box img{
