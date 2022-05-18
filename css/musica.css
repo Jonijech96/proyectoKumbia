@@ -1,0 +1,47 @@
+@import "./header.css";
+@import "./fondoPortada.css";
+@import "./footer.css";
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+
+}
+ul{
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #FAAB05   ;
+    font-family: 'Kanit', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2{
+    font-family: 'Kanit',sans-serif;
+}
+li{
+    list-style: none;
+}
+
+.musica-grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
+    gap: 40px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.titulo-plataformas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
