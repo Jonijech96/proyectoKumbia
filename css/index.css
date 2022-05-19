@@ -4,7 +4,9 @@
 
 body {
     margin: 0;
-    
+}
+*{
+    box-sizing: border-box;
 }
 ul{
     list-style: none;
@@ -60,7 +62,7 @@ header .container-header ul a:hover{
 
 .container-video video{
     width: 100%;
-    height: 100vh;    
+    height: 88vh;    
     object-fit: cover;
     position: absolute;
     top: 0px;
@@ -78,14 +80,13 @@ header .container-header ul a:hover{
 }
 
 .texto-principal{
-    padding-top: 12vh;
+    
     font-family: 'Dancing Script', cursive;
     color: white;
     height: 88vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .texto-principal .logo-frase{
@@ -99,7 +100,15 @@ header .container-header ul a:hover{
     font-size: 4rem;
 }
 
-.texto-principal .icono-conocenos{
+
+.container-conocenos{
+    background-color: #010506;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icono-conocenos{
     
     /* background: rgba(255,255, 255, 0.25); */
     color: white ;
@@ -111,6 +120,11 @@ header .container-header ul a:hover{
     fill: white;
     transition: all 600ms;
     
+
+    
+}
+.icono-conocenos svg{
+    width: 69px;
 }
 @keyframes pulse{
     0% {
@@ -177,4 +191,17 @@ header .container-header ul a:hover{
     z-index: 3;
     right: 30px;
     width: 30px;
+}
+
+
+
+@media screen and (max-width:600px) {
+    .texto-principal h2{
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    .logo-frase img{
+        width: 90vw;
+    }
 }
