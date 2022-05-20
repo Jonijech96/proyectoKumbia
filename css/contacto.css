@@ -65,7 +65,7 @@ li{
     margin-right: 40px;
 }
 .popup-formulario .imagen{}
-.popup-formulario img{
+.popup-formulario .imagen img{
     
     height: 100%;
     object-fit: cover;
@@ -159,6 +159,11 @@ li{
     padding-right: 40px;
 }
 
+.popup .form img {
+    margin: auto;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
 .no-gracias {
     cursor: pointer;
     font-weight: bold;
@@ -168,4 +173,14 @@ li{
 }
 .no-gracias:hover{
     text-decoration: underline;
+}
+
+@media screen and (max-width:600px) {
+    .popup-formulario .imagen{
+        display: none;
+    }
+
+    .popup .form{
+        padding: 0 20px;
+    }
 }
