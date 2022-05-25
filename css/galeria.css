@@ -34,7 +34,7 @@ li{
 }
 
 .galeria{
-    margin: 100px 1em;
+    margin: 1em;
 columns: 5 320px;
 column-gap: 0.5em;
 
@@ -77,4 +77,11 @@ column-gap: 0.5em;
 .next{
     display: block;
     color: #fff;
+}
+
+@media screen and (max-width:600px) {
+    .galeria{
+        margin: 1em;
+    }
+
 }

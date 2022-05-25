@@ -71,6 +71,10 @@ header .container-header ul a:hover{
         width: 100%;
         transition: height 600ms;
     } 
+
+    header{
+        background-color: rgba(0, 7, 12, 0.801);
+    }
     .menu__active{
         height: 220px;
     }
@@ -85,7 +89,7 @@ header .container-header ul a:hover{
     cursor: pointer;
     display: block;
     right: 30px;
-    top: 30px;
+    top: 37px;
 
 
     }
