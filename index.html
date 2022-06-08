@@ -15,6 +15,9 @@
 <!-- Script Scroll Reveal -->
 <script src="https://unpkg.com/scrollreveal"></script>
 
+<!-- link glider js -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
 </head>
 
 <body>
@@ -134,14 +137,36 @@
             <div class="galeria">
                 <h3>Galeria</h3>
                 <div class="galeria-imagenes">
-                    <img src="imag/foto-grupo3.jpg" alt="">
-                    <img src="imag/foto-grupo3.jpg" alt="">
-                    <img src="imag/foto-grupo3.jpg" alt="">
-                    <img src="imag/foto-grupo3.jpg" alt="">
-                    <img src="imag/foto-grupo3.jpg" alt="">
-                    <img src="imag/foto-grupo3.jpg" alt="">
+                    <button aria-label="Anterior" class="galeria-anterior">
+                        <i>◄</i>
+                    </button>
+                    <div class="carrousel-imagenes">
+                        <div class="carrousel-imagen">
+                            <img src="imag/foto-grupo3.jpg" alt="">
+                        </div>
+                        <div class="carrousel-imagen">
+                            <img src="imag/foto-grupo3.jpg" alt="">
+                        </div>
+                        <div class="carrousel-imagen">
+                            <img src="imag/foto-grupo3.jpg" alt="">
+                        </div>
+                        <div class="carrousel-imagen">
+                            <img src="imag/foto-grupo3.jpg" alt="">
+                        </div>
+                        <div class="carrousel-imagen">
+                            <img src="imag/foto-grupo3.jpg" alt="">
+                        </div>
+                        <div class="carrousel-imagen">
+                            <img src="imag/foto-grupo3.jpg" alt="">
+                        </div>
+                    </div>
+                    <button aria-label="Siguiente" class="galeria-siguiente">
+                        <i>►</i>
+                    </button>
+                    
                     <!-- <img src="imag/foto-grupo3.jpg" alt=""> -->
                 </div>
+                <div role="tablist" class="galeria-indicadores"></div>
             </div>
             <section id="contacto">
                 <div class="container">
@@ -200,5 +225,7 @@
         </div>
     </footer>
     <script src="./js/scrollHeader.js"></script>
+    <!-- Script Glider -->
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 </body>
 </html>

@@ -323,23 +323,56 @@ header .container-header ul a:hover{
 
 
 /* seccion galeria */
+.galeria{
+    padding: 20px 5%;
+}
 .galeria-imagenes img{
-    max-width: 100%;
+    /* max-width: 100%;
     margin-bottom: 0.5em;
     outline: 2px solid #fff;
-    /* display: block; */
-    outline-offset: -8px;
+    
+    outline-offset: -8px;*/
 }
 
 .galeria-imagenes{
-    margin: 1em;
+    position: relative;
+    
+     /*
 columns: 5 320px;
-column-gap: 0.5em;
+column-gap: 0.5em; */
+}
+
+.galeria-anterior,
+.galeria-siguiente{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 20px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #ffff;
+    opacity: 20%;
+}
+.galeria-anterior{
+    left: -30px;
+}
+.galeria-siguiente{
+    right: -30px;
+}
+.galeria-anterior:hover,
+.galeria-siguiente:hover{
+    opacity: 100%;
 }
 
 
 /* seccion newsletter */
-
+.container .form{
+    padding: 1px;
+}
 .form{
     max-width: 540px;
     display: flex;
