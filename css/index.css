@@ -38,46 +38,8 @@ h1,h3{
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
-/* header{
-    border-bottom: 1px solid rgba(255,255, 255, 0.25);
-    box-shadow: 0 0 8px black;
-    position: fixed;
-    width: 100%;
-    z-index: 5;
-    
-}
-header .container-header{
-    display: flex;
-    width: 75%;
-    margin: auto;
-    justify-content: space-between;
-    align-items: center;
-}
 
-header .container-header ul{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    margin: 0;
-    padding: 0;
-    
-}
-header .container-header ul a{
-    
-  
-    transition: all 300ms;
-    
-}
-header .container-header ul a:hover{
-    color: #E35F21 ;
-    text-decoration: underline;
-} */
-
-
-
-
-
-.container-video video{
+.container-video__video{
     width: 100%;
     height: 88vh;    
     object-fit: cover;
@@ -96,7 +58,7 @@ header .container-header ul a:hover{
     z-index: -1;
 }
 
-.texto-principal{
+.principal__principal-text{
     
     font-family: 'Dancing Script', cursive;
     color: white;
@@ -106,27 +68,26 @@ header .container-header ul a:hover{
     justify-content: center;
 }
 
-.texto-principal .logo-frase{
+.principal__principal-text__logo{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0;
 }
-.texto-principal h2{
+.principal__principal-text__h2{
     margin: 0;
     font-size: 4rem;
 }
 
 
-.container-conocenos{
+.principal__know-us{
     background-color: #010506;
     height: 12vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icono-conocenos{
     
+}
+.principal__know-us__icon{
+    width: 100px;
+    margin: auto;
     /* background: rgba(255,255, 255, 0.25); */
     color: white ;
     display: flex;
@@ -140,7 +101,7 @@ header .container-header ul a:hover{
 
     
 }
-.icono-conocenos svg{
+.principal__know-us__icon svg{
     width: 69px;
 }
 @keyframes pulse{
@@ -157,12 +118,12 @@ header .container-header ul a:hover{
         /* box-shadow: 0 0 0 0 rgba(256, 256, 256, 0); */
     }
 }
-.icono-conocenos:hover{
+.principal__know-us__icon:hover{
     color: #FAAB05    ;
     fill: #FAAB05   ;
 }
 
-.barra-horizontal{
+.principal__horizontal-bar{
     background-color: #010506   ;
     position: absolute;
     top: 0;
@@ -174,7 +135,7 @@ header .container-header ul a:hover{
     
 }
 
-.texto-horizontal{
+.principal__horizontal-bar__text{
     
     writing-mode: vertical-lr;
     transform: rotate(180deg);
@@ -190,19 +151,21 @@ header .container-header ul a:hover{
     font-size: 14px;
     padding-top: 30px;
 }
-.texto-horizontal a{
+.principal__horizontal-bar__text__a{
     transition: all 100ms;
 }
-.texto-horizontal a:hover{
+.principal__horizontal-bar__text__a:hover{
     opacity: 0.5;
 }
-.texto-horizontal hr{
+.principal__horizontal-bar__hr{
     width: 80px;
     transform: rotate(90deg);
     margin: 50px;
     
 }
-.container-icons-music{
+
+
+.principal__icons-music{
     position: absolute;
     bottom: 20px;
     z-index: 3;
@@ -211,26 +174,22 @@ header .container-header ul a:hover{
 }
 
 /* SECCION ABOUT */
-#quienes-somos{
-    padding-top: 100px;
-    padding-bottom: 100px;
 
-}
 
-.contenedor-quienes-somos{
+.about-us{
     width: 90%;
     
     display: flex;
     max-width: 1320px;
-    margin: auto;
-    justify-content: space-around;
+    margin: 50px auto;
+    justify-content: space-evenly;
     align-items: center;
     gap: 30px;
     flex-wrap: wrap;
 }
 
 
-.contenedor-quienes-somos .quienes-somos-texto{
+.about-us__text{
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
@@ -238,11 +197,11 @@ header .container-header ul a:hover{
     display: flex;
     flex-direction: column;
 }
-.contenedor-quienes-somos .quienes-somos-imagen img{
+/* .about-us__image img{
    
     width: 80%;
-}
-.contenedor-quienes-somos .quienes-somos-imagen {
+} */
+.about-us__image {
     display: flex;
     justify-content: center;
     width: 40%;
@@ -250,40 +209,40 @@ header .container-header ul a:hover{
 
 
 @media screen and (max-width:600px) {
-    #quienes-somos{
-        padding: 10px 0;
     
-    }
-    .contenedor-quienes-somos{
+    
+    .about-us{
+        margin: 10px auto;
         width: 70%;
         flex-direction: column;
+        
         }
-    .contenedor-quienes-somos .quienes-somos-imagen{
+    .about-us__image{
         width: 100%;
         }
-    .contenedor-quienes-somos .quienes-somos-imagen img{
+    .about-us__image img{
         width: 100%;
         }
-    .contenedor-quienes-somos .quienes-somos-texto{
+    .about-us__text{
         width: 90%;
         }
 
 }
 
 @media screen and (max-width:600px) {
-    .texto-principal h2{
+    .principal__principal-text__h2{
         margin: 0;
         font-size: 2rem;
     }
 
-    .logo-frase img{
+    .principal__principal-text__logo img{
         width: 90vw;
     }
 }
 
 
 /* SECCION MUSICA */
-.contenedor-frames{
+.music{
     
     
     background-image: linear-gradient(
@@ -302,11 +261,11 @@ header .container-header ul a:hover{
         color: #FAAB05;
 }
 
-.contenedor-frames h3{
+.music__h3{
     color: white;
 }
 
-.musica-grid{
+.music__grid{
     text-align: center;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(15rem,1fr));
@@ -315,7 +274,7 @@ header .container-header ul a:hover{
     justify-content: center;
 }
 
-.titulo-plataformas{
+.music__grid__title{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,7 +283,7 @@ header .container-header ul a:hover{
 
 /* seccion galeria */
 .galeria{
-    padding: 20px 5%;
+    padding: 20px 10%;
 }
 .galeria-imagenes img{
     /* max-width: 100%;

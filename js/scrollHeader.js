@@ -1,10 +1,11 @@
-document.querySelector(".bars__menu").addEventListener("click", animateBars);
+// FUNCION DE MENU DESPLEGABLE
+document.querySelector(".bars-menu").addEventListener("click", animateBars);
 
 var line1__bars = document.querySelector(".line1__bars-menu");
 var line2__bars = document.querySelector(".line2__bars-menu");
 var line3__bars = document.querySelector(".line3__bars-menu");
 
-var menu__desplegable = document.querySelector(".menulist");
+var menu__desplegable = document.querySelector(".menu-list");
 
 function animateBars() {
   line1__bars.classList.toggle("activeline1__bars-menu");
@@ -14,24 +15,26 @@ function animateBars() {
   menu__desplegable.classList.toggle("menu__active");
 }
 
+// FUNCION DE SCROLL EN HEADER
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");
-  header.classList.toggle("abajo", window.scrollY > 0);
+  header.classList.toggle("header--botton", window.scrollY > 0);
 });
 
+// FUNCION DE ELEMENTOS QUE APARECEN
 sr = ScrollReveal();
-
-sr.reveal(".quienes-somos-texto", {
+sr.reveal(".about-us__text", {
   duration: 3000,
   origin: "right",
   distance: "-100px",
 });
-sr.reveal(".quienes-somos-imagen", {
+sr.reveal(".about-us__image", {
   duration: 3000,
   origin: "left",
   distance: "-100px",
 });
 
+// FUNCION DE CARROUSEL EN PAGINA PRINCIPAL
 window.addEventListener("load", function () {
   new Glider(document.querySelector(".carrousel-imagenes"), {
     slidesToShow: 1,

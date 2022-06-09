@@ -1,5 +1,5 @@
 
-svg.icons-music{
+.icons-music{
     height: 30px;
     width: 30px;
     background-color: white;
@@ -7,7 +7,7 @@ svg.icons-music{
     transition: all 100ms;
 }
 
-svg.icons-music:hover{
+.icons-music:hover{
     opacity: 0.5;
     transform: scale(1.1);
 }
