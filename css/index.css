@@ -282,18 +282,12 @@ h1,h3{
 
 
 /* seccion galeria */
-.galeria{
+.gallery{
     padding: 20px 10%;
 }
-.galeria-imagenes img{
-    /* max-width: 100%;
-    margin-bottom: 0.5em;
-    outline: 2px solid #fff;
-    
-    outline-offset: -8px;*/
-}
 
-.galeria-imagenes{
+
+.gallery__images{
     position: relative;
     
      /*
@@ -301,8 +295,8 @@ columns: 5 320px;
 column-gap: 0.5em; */
 }
 
-.galeria-anterior,
-.galeria-siguiente{
+.gallery__prev,
+.gallery__next{
     position: absolute;
     display: block;
     width: 30px;
@@ -316,14 +310,14 @@ column-gap: 0.5em; */
     color: #ffff;
     opacity: 20%;
 }
-.galeria-anterior{
+.gallery__prev{
     left: -30px;
 }
-.galeria-siguiente{
+.gallery__next{
     right: -30px;
 }
-.galeria-anterior:hover,
-.galeria-siguiente:hover{
+.gallery__next:hover,
+.gallery__prev:hover{
     opacity: 100%;
 }
 

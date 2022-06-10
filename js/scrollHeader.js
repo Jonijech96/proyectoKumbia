@@ -36,15 +36,15 @@ sr.reveal(".about-us__image", {
 
 // FUNCION DE CARROUSEL EN PAGINA PRINCIPAL
 window.addEventListener("load", function () {
-  new Glider(document.querySelector(".carrousel-imagenes"), {
+  new Glider(document.querySelector(".gallery__carrousel"), {
     slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
     rewind: true,
-    dots: ".galeria-indicadores",
+    dots: ".gallery__indicator",
     arrows: {
-      prev: ".galeria-anterior",
-      next: ".galeria-siguiente",
+      prev: ".gallery__prev",
+      next: ".gallery__next",
     },
     responsive: [
       {
