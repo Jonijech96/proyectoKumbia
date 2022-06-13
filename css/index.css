@@ -28,15 +28,7 @@ h1,h3{
     font-weight: 100;
 }
 
-.button-ref{
-    color: white;
-    background-color: #1a1a1a;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-}
+
 
 
 .container-video__video{
@@ -284,6 +276,7 @@ h1,h3{
 /* seccion galeria */
 .gallery{
     padding: 20px 10%;
+    text-align: center;
 }
 
 
@@ -323,10 +316,9 @@ column-gap: 0.5em; */
 
 
 /* seccion newsletter */
-.container .form{
-    padding: 1px;
-}
+
 .form{
+    padding: 1px;
     max-width: 540px;
     display: flex;
     flex-direction: column;
@@ -336,14 +328,15 @@ column-gap: 0.5em; */
     text-align: center;
 }
 
-.form p{
+.form__p{
     margin: 0;
 }
-.form label{
+.form__label{
     display: flex;
     flex-direction: column;
+    font-family: 'kanit',sans-serif;
 }
-.form input, .form textarea{
+.form__input{
     border: 2px solid rgba(140, 149, 155, 0.877);
 
     padding: 12px 16px 12px 16px;
@@ -351,24 +344,26 @@ column-gap: 0.5em; */
     margin-top: 8px;
 
 }
-.form .button{
+
+.button-ref{
     color: white;
     background-color: #1a1a1a;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 10px 20px;
-    font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
     border: 1px solid rgba(0, 0, 0, 0.5);
+    font-family: 'kanit', sans-serif;
 }
-.form img{
+
+
+.form__logo{
     margin: auto;
     filter: drop-shadow(2px 4px 6px black);
 
 }
-.form label{
-    font-family: 'kanit',sans-serif;
-}
-.form .title{
+
+
+.title{
     font-size: 1.5rem;
 }

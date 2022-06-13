@@ -23,12 +23,12 @@ window.addEventListener("scroll", function () {
 
 // FUNCION DE ELEMENTOS QUE APARECEN
 sr = ScrollReveal();
-sr.reveal(".about-us__text", {
+sr.reveal(".box--right", {
   duration: 3000,
   origin: "right",
   distance: "-100px",
 });
-sr.reveal(".about-us__image", {
+sr.reveal(".box--left", {
   duration: 3000,
   origin: "left",
   distance: "-100px",
